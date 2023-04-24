@@ -31,10 +31,30 @@ section#login {
     top: 50%;
     transform: translate(-50%, -50%);
 
+    overflow: hidden;
     width: 250px;
     height: 500px;
     border-radius: 20px;
     background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
-section#login > div
+section#login > div#imagem {
+    display: block;
+    background: var(--lilas) url(../imagens/login.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+section#login > div#formulario > h1 {
+    text-align: center;
+}
