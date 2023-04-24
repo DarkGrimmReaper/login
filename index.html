@@ -19,19 +19,17 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="login.php" method="post">
-                    <p>
-                        <label for="iusu"><i class="material-icons">person</i></label>
-                        <input type="text" name="usuario" id="iusu">
-                    </p>
-                    <p>
-                        <label for="isen"><i class="material-icons">vpn_key</i></label>
-                        <input type="password" name="senha" id="isen">
-                    </p>
-                    <p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <label for="ilogin"><i class="material-icons">person</i></label>
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+                    </div>
+                    <div class="campo">
+                        <label for="isenha"><i class="material-icons">vpn_key</i></label>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                    </div>
                         <input type="submit" value="Entrar">
-                        <input type="button" value="Esqueci a Senha">
-                    </p>
+                        <a href="esqueci.html">Esqueci a senha <i class="material-icons">mail</i></a>
                 </form>
             </div>
         </section>
